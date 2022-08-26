@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+}
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'idroid', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: var(--fonte0);
+    background-color: var(--cor0);
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    min-height: 150px;
+    min-width: 320px;
+    max-width: 100%;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+}
+header > h1 {
+    font-family: var(--fonte1);
+    margin-bottom: 15px;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px var(--cor5);
+    font-weight: normal;
+}
+header > p {
+    text-shadow: 2px 2px 5px var(--cor5);
+    min-width: 280px;
+    max-width: 600px;
+    margin: 0px auto;
+    font-size: 1.2em;
+    padding: 0px 10px;
+}
+nav {
+    background-color: var(--cor5);
+    padding-left: 5px;
+    min-width: 315px;
+    max-width: 100%;
+}
+nav > a {
+    display: inline-block;
+    color: var(--cor2);
+    text-decoration: none;
+    background-color: var(--cor5);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
+nav > a:hover {
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
+main {
+    min-width: 280px;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+    margin: 0px auto 30px auto;
+    padding: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+main img {
+    width: 100%;
+}
+.centro {
+    display: block;
+    max-width: 300px;
+    margin: 0px auto;
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+article > h1{
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+article > h2{
+    font-family: var(--fonte2);
+    background: linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor5);
+    padding: 5px;
+    margin: 20px 0px;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+.lstyle {
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: bold;
+}
+.lstyle:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+.lstyle::after {
+    content: '\1f517';
+}
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin: 0px -20px 20px -20px;
+    padding-bottom: 59%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+aside {
+    background-color: var(--cor1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+}
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 0px -15px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul {
+    list-style-type: '\2714\00A0';
+    columns: 2;
+    list-style-position: inside;
+}
+li > abbr {
+    text-decoration: underline;
+}
+footer {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    text-align: center;
+    color: white;
+    padding: 20px 5px;
+    min-width: 310px;
+    max-width: 100%;
+}
+.lfooter {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lfooter:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+.lfooter::after {
+    content: '\1f517';
+}
+::-webkit-scrollbar{
+    background-color: var(--cor0);
+    width: 11px;
+    height: 11px;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    border: 2px solid var(--cor0);
+    border-radius: 9px;
+}

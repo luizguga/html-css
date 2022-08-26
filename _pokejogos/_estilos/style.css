@@ -1,0 +1,127 @@
+﻿@charset "UTF-8";
+
+@font-face {
+	font-family: 'Computer';
+	src: url("../_fonts/computer-font.ttf");
+}
+
+:root {
+	--cor0: #ff032a;
+	--cor1: #E60224;
+	--cor2: #BF021E;
+	--cor3: #800114;
+	--cor4: #40010A;
+	--font_cont: Arial,Helvetica,sans-serif;
+	--font_tit: 'Computer', cursive;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: var(--font_cont);
+	color: white;
+	background-color: var(--cor0);
+}
+header#principal {
+	position: relative;
+	background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+	min-width: 280px;
+	max-width: 1000px;
+	min-height: 150px;
+	padding: 20px;
+	margin: 0px auto;
+}
+header#principal > h1 {
+	font-family: var(--font_tit);
+	font-size: 3em;
+	font-weight: normal;
+}
+nav a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	color: transparent;
+	margin-right: 10px;
+}
+nav a#home {
+	background: url('../_imagens_menu/controle.png') no-repeat;
+}
+nav a#sobre {
+	background: url('../_imagens_menu/pokedex_fechada.png') no-repeat;
+	transition: background-image .1s .1s;
+}
+nav a#sobre:hover {
+	background: url('../_imagens_menu/pokedex_aberta.png') no-repeat;
+}
+main {
+	position: relative;
+	min-width: 280px;
+	max-width: 1000px;
+	padding: 20px;
+	margin: 20px auto;
+	background-color: var(--cor4);
+
+}
+main header h3 {
+	font-family: var(--font_tit);
+	font-weight: normal;
+	font-size: 1.7em;
+}
+section {
+	max-width: 600px;
+	min-width: 250px;
+	padding: 20px;
+	margin: 20px auto 0px auto;
+}
+div {
+	width: 250px;
+	margin: 20px auto 20px auto;
+	background-color: var(--cor3);
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+div img{
+	display: block;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+div a{
+	display: block;
+	margin: 10px auto 0px auto;
+	color: transparent;
+	height: 63px;
+	width: 170px;
+	background: url('../_imagens/download.png') no-repeat;
+}
+footer {
+	background-color: var(--cor4);
+	padding: 15px;
+	text-align: center;
+	min-width: 290px;
+	max-width: 100%;
+}
+footer a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color .1s 70ms;
+	margin: 0px 5px;
+}
+footer a:hover {
+	color: var(--cor0);
+	text-decoration: underline;
+}
+footer a::before {
+	content: '\1f517\00A0';
+}
+body::-webkit-scrollbar {
+	background-color: var(--cor0);
+	width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: var(--cor0);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            /* 
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+        h1 {
+            /* shorthand font 
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans', sans-serif;
+            */
+            font: italic normal 3em 'Bungee Shade', cursive;
+            color: white;
+            background-color: rgb(36, 36, 36);
+            text-align: center;
+            padding-right: 7px;
+            border-radius: 20px;
+        }
+        h2 {
+            font:  italic normal 1.9em 'Bungee Shade', cursive;
+            color: white;
+            background-color: rgb(36, 36, 36);
+            text-align: center;
+            padding-right: 7px;
+            border-radius: 20px;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-indent: 15px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consectetur doloribus quisquam fuga perferendis atque aliquid possimus, culpa accusantium minima recusandae dolor. Distinctio consequatur id laboriosam delectus numquam! Asperiores, explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ab beatae debitis provident libero quia dolor sequi obcaecati nam soluta, natus nihil fuga voluptates incidunt magni eveniet facilis non vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut accusamus animi voluptates, eaque maxime accusantium quam provident, dolorum perspiciatis pariatur maiores non! Ex repellendus quos numquam qui omnis quas exercitationem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis adipisci repellat earum quaerat perspiciatis voluptatem laudantium in temporibus corporis aperiam unde animi, reiciendis deserunt error officiis aliquam, mollitia non! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate saepe unde quaerat dolorem sed autem! Laudantium, consectetur consequatur. Laudantium reprehenderit rerum atque libero et sint iste sequi temporibus dignissimos.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab sit beatae at corrupti ipsam dolor quaerat, incidunt natus itaque voluptates porro repellat aspernatur, in similique! Beatae, atque asperiores. Aliquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non tempore voluptates fuga architecto sed laborum. Reiciendis tempora quod, nulla nesciunt provident soluta vel impedit voluptatum exercitationem, quidem perferendis nobis unde?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt expedita vel dolorem numquam? Iure accusamus nostrum totam, laboriosam distinctio mollitia provident accusantium error doloribus, rerum fugit dolorum facilis ullam aliquam!</p>
+</body>
+</html>
