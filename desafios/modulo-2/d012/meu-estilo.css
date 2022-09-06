@@ -9,8 +9,7 @@
     padding: 0px;
 }
 body {
-    font-family: 'Sriracha', cursive;
-    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header {
     background-color: black;
@@ -20,77 +19,73 @@ header {
     width: 100%;
     position: relative;
 }
-header hgroup {
-    position: absolute;
+header h1 {
     font-family: 'Passion One', cursive;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-hgroup h1 {
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 10vw;
 }
-hgroup h2 {
-    font-family: 'Passion One', cursive;
+header p {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1em;
 }
-hgroup h2 a {
-    font-weight: bolder;
+header p a {
+    font-weight: 900;
     text-decoration: none;
     color: white;
 }
-hgroup h2 a:hover {
+header p a:hover {
     text-decoration: underline;
+}
+header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+section {
+    padding: 10px;
+}
+section p {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.3em;
+    min-width: 260px;
+    max-width: 300px;
+    padding: 15px;
 }
 .cor-fundo {
     background-color: white;
 }
 .cor-fundo p {
     margin: 10px 0px;
-    width: 250px;
-    padding: 15px;
 }
 #img-fundo-1 {
     background: black url('imagens/background001.jpg') right center no-repeat fixed;
     background-size: cover;
-    padding: 20px 0px;
 }
 #img-fundo-1 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 250px;
-    padding: 15px;
 }
 #img-fundo-2 {
     background: black url('imagens/background002.jpg') right center no-repeat fixed;
     background-size: cover;
-    padding: 20px 0px;
 }
 #img-fundo-2 p {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 250px;
-    padding: 15px;
 }
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    min-height: 50px;
     color: white;
     background-color: black;
     position: relative;
 }
 footer p {
-    position: absolute;
-    padding: 5px;
     text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
+    padding: 5px;
 }
 footer a {
     text-decoration: none;
