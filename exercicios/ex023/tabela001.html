@@ -16,10 +16,13 @@
         tr.linha {
             background-color: gray;
         }
-        table td {
+        table td, table th{
             text-align: center;
             padding: 8px;
             border: 1px solid black;
+        }
+        .titulos {
+            background-color: darkcyan;
         }
         td.dado {
             background-color: yellow;
@@ -36,6 +39,7 @@
                 TABLE DATA = dado de tabela
     -->
     <table>
+        <tr class="titulos"><th>Dados A</th><th>Dados B</th> <th>Dados C</th></tr>
         <tr><td>A1</td><td>B1</td><td>C1</td></tr>
         <tr class="linha"><td>A2</td><td>B2</td><td>C2</td></tr>
         <tr><td>A3</td><td>B3</td><td>C3</td></tr>
