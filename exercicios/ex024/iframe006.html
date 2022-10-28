@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section#videos {
+            min-width: 300px;
+            max-width: 600px;
+        }
+        div {
+            position: relative;
+            margin-bottom: 20px;
+            padding: 56.25% 0 0 0;
+        }
+        iframe {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdos dentro de iframes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quam saepe temporibus recusandae quo provident voluptatum ab laborum quia architecto accusantium, dolor debitis possimus exercitationem sint quas repellat, ipsa aliquid.</p>
+    <section id="videos">
+        <h2>Vídeos</h2>
+        <div>
+            <iframe src="https://www.youtube-nocookie.com/embed/dzhJsc1YszU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h2>Mapas do Google</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7566.021746663941!2d-43.18380135635644!3d-22.901715456552353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sHostnet%20Internet!5e0!3m2!1spt-BR!2sbr!4v1666988663062!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer"></iframe>
+        </div>
+    </section>
+</body>
+</html>
