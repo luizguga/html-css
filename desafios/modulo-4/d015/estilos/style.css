@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background: transparent url('../imagens/fundo-madeira.jpg') center center no-repeat fixed;
+    background-size: cover;
+    padding: 10px 0;
+}
+nav#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+a {
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin: 20px;
+    border: 0px solid #00000000;
+    border-radius: 35px;
+    box-shadow: 2px 2px 1px 1px transparent;
+    color: white;
+    background-color: black;
+    transition: border .3s, box-shadow .3s;
+}
+a:hover {
+    border: 1px solid white;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.425);
+}
+a#home {
+    background: transparent url('../imagens/logo-home.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+a#youtube {
+    background: transparent url('../imagens/logo-youtube.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+a#github {
+    background: transparent url('../imagens/logo-github.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+a#instagram {
+    background: transparent url('../imagens/logo-instagram.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+a#twitter {
+    background: transparent url('../imagens/logo-twitter.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+a#facebook {
+    background: transparent url('../imagens/logo-facebook.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+div#celular {
+    position: relative;
+    height: 627px;
+    width: 311px;
+    margin: auto;
+    background: transparent url('../imagens/frame-iphone.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+iframe#tela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 475px;
+}
