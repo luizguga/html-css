@@ -11,30 +11,21 @@ img {
 a {
     position: relative;
     display: block;
-    width: 100vw;
-    height: 15vh;
+    padding: 20px;
     background: #a00808;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 1.5em;
+    font-weight: bolder;
+    font-size: 1em;
     color: white;
     text-decoration: none;
-    transition: background-color .6s;
+    text-align: center;
+    text-transform: uppercase;
 }
 a:hover {
     background-color: #c50b0b;
-}
-a span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-}
-a:hover span {
-    text-decoration: underline;
+    transition: background-color .6s;
 }
 ::-webkit-scrollbar {
-    display: none;
+    height: 0;
+    width: 0;
 }
