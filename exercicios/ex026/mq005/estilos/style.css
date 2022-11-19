@@ -36,7 +36,7 @@ menu > ul {
 }
 menu > ul > li > a {
     display: block;
-    padding: 10px;
+    padding: 10px 30px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87,87,87);
